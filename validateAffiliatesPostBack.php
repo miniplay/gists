@@ -3,7 +3,7 @@
     define("POSTBACK_SECRET","961c8cbcb174566f5d5297049c666d95"); // Use your postback secret (copied from your user preferences)
 
     if((isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] === 'POST')) {
-        $date = isset($_POST["date"]) ? $_POST["date"] : null;
+        $date = isset($_POST["date"]) ? $_POST["date"] : null; // Sample format: 1997-07-16T19:20+01:00
         $trackId = isset($_POST["track-id"]) ? $_POST["track-id"] : null;
         $trackSubId = isset($_POST["track-subid"]) ? $_POST["track-subid"] : null;
         $transactionId = isset($_POST["transaction-id"]) ? $_POST["transaction-id"] : null;
